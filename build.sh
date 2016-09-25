@@ -5,7 +5,7 @@ PDFLATEX='pdflatex -interaction=nonstopmode -shell-escape -file-line-error'
 # Файлы/Папки
 PDF_NAME='out/document.pdf'
 TEX='src'
-IMG='src/inc/img'
+IMG='img'
 MAINTEX='tex-cv'
 
 # Конвертация eps
