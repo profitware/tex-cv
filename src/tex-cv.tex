@@ -11,11 +11,9 @@
 \def\cpp{C/C{}\texttt{++}}
 
 \name{Sergey}{Sobko}
-\title{Senior Software Engineer / Team Lead}
+\title{Lead Software Architect}
 
 \phone[mobile]{omitted for web}
-
-\email{info@profitware.ru}
 
 \social[linkedin]{bug2bug}
 \social[github]{profitware}
@@ -44,30 +42,38 @@ and Networks}{Moscow Institute of Electronics and Mathematics -- Higher School o
 \cvline{technologies}{Django, Flask, Tornado, MySQL, SQLite, Emacs,
 \LaTeX{}, Bash Scripting, Git, Subversion, PostgreSQL, MongoDB, jQuery,
 Bootstrap, Windows, Debian \& Red Hat Linux, OSX, JSON, Ant, XSLT,
-Regexr, HTML, CSS}
+Regexr, HTML, CSS, Docker, Kubernetes, Helm, Apache Camel, OpenShift}
 \subsection{Have Experience With}
 \cvline{languages}{PHP, Java, C$^\sharp$, $\cpp$, Erlang, Groovy, Haskell,
-Scala} \cvline{technologies}{Apache, Nginx, Flash, GIMP, SQL Server, Oracle,
-Eclipse, .NET}
+Scala} \cvline{technologies}{Apache Kafka, Nginx, Flash, GIMP, SQL Server, Oracle,
+Eclipse, .NET, Spring, Rancher, MicroK8s, OpenStack}
 
 
 \section{Current Position}
-\cventry{2016--\textit{present}}{Team Lead}{Positive Technologies}{Moscow}{}{
+\cventry{2019--\textit{present}}{Lead Open Source Software Architect}{IBM}{Moscow}{}{
+Open Source Software solutions implementation and support:
+\begin{itemize}
+\item Red Hat Certified Architect in Infrastructure Level II (\url{https://www.redhat.com/rhtapps/services/verify/?certId=200-054-419})
+\item Proof-of-concepts and pilots for Banks, Telecoms and Government Companies (e.g., OpenStack PoC implementation and acceptance testing in large Telco).
+\item Built interaction relationships with partners and vendors for support and consultancy on Nginx, PostgreSQL, Apache Kafka and other software products.
+\item Architectures and Solutioning for OpenShift, Apache Kafka, PostgreSQL, security, logging and monitoring in Banks, Government, Oil and Gas Companies.
+\end{itemize}}
+
+\section{Work Experience}
+\cventry{2016--2019}{Development Team Leader / Software Architect}{Positive Technologies}{Moscow}{}{
 Web Application Firewall (\url{https://af.ptsecurity.com/}) solutions management and R\&D using Python (Flask, Twisted), Groovy and JavaScript.
 \begin{itemize}
+\item Designed the entire backend architecture for cloud-based (Kubernetes) PT AF.
+\item Managed AF user interface and network infrastructure team which gradually increased up to 10 members.
+\item Implemented ``Automatic Teamlead'' solution for automation of development team routines and published ``Flower'' integration library for Jira, TFS, Gitlab and GitHub into open source (\url{https://github.com/PositiveTechnologies/flower}) -- it got over 100 stars.
 \item Created domain-specific language and interpreter for network configuration.
 \item Created device package for PT AF integration with Cisco ACI.
-\item Designed architectural solution for data structure unification.
-\item Managed AF user interface and network infrastructure team which gradually increased up to 10 members.
 \item Presented Cisco ACI and PT AF integration with Cisco Systems representatives at Positive Hack Days VI.
 \item Implemented part of WAF transparent proxy mode (bridge l2 interception).
 \end{itemize}
 }
 
-
-\section{Work Experience}
-\cventry{2015--2016}{Senior
-Software Developer}{Positive Technologies}{Moscow}{}{
+\cventry{2015--2016}{Sr. Software Developer}{Positive Technologies}{Moscow}{}{
 Web Application Firewall (\url{https://af.ptsecurity.com/})
 solutions R\&D using Python (Flask, Twisted) and JavaScript.
 \begin{itemize}
@@ -113,8 +119,9 @@ Web sites and internal ERP solutions R\&D using Python and JavaScript.
 \end{itemize}
 }
 
-\cventry{2005--present}{Opensource Developer}{The Profitware Group}{}{}{
-Participated in the creation of free and opensource software:
+\section{Open Source Development}
+\cventry{2005--present}{Open Source Developer}{The Profitware Group}{}{}{
+Participated in the creation of free and open source software:
 \begin{itemize}
 \item For Moscow Institute of Electronics and Mathematics:
   \begin{itemize}
@@ -125,30 +132,25 @@ Participated in the creation of free and opensource software:
     \item Cheque -- Flask OCR RESTful service.
   \end{itemize}
 \item Productivity Desktop Environment for Fedora GNU/Linux.
+\item Leiningen plugins for OpenShift, Ring static extraction and version handling.
 \item ProfitPlatform-NG -- Python and Erlang distributed RPC using RabbitMQ.
 \item Lisp Flavoured Erlang (LFE): finite lazy sequences and cycle/1 implementation.
-\item SaltStack and Ferm small improvements.
+\item SaltStack, Ferm, Gitlab Java API, HyLang, Rouge small improvements.
 \end{itemize}
 }
 
 
 \section{Teaching and Coaching Experience}
 \cventry{2016--\textit{present}}{Lecturer in Computer Science}{Higher School of Economics}{Moscow}{}{
-Web Development Course (\url{https://www.hse.ru/edu/courses/184775196} -- for Master's program Computer Linguistics) which aims to teach students:
+Web Development Course (\url{https://www.hse.ru/en/edu/courses/219903520} -- for Master's program Computational Linguistics) which was acknowledged as ``Best Course for New Knowledge and Skills'' in 2018/19 and aims to teach students:
 \begin{itemize}
 \item making up web pages using Bootstrap;
 \item creating web applications using Python (Flask, Celery);
-\item creating modern frontend web applications using AngularJS.
+\item creating modern frontend web applications using AngularJS;
+\item packaging web applications into docker containers.
 \end{itemize}}
 
 \cventry{2016--\textit{present}}{Coach}{Django Girls}{Moscow}{}{Coached participants of Django Girls Moscow 2016 (\url{http://tceh.com/djangogirls/}).}
-
-
-\section{Certifications}
-\cventry{2014}{Molecular Biology and Genetics}{Bioinformatics
-Institute}{Saint Petersburg}{100\%}{}
-\cventry{2016}{Distributed Team Management}{Netology Group}{Moscow}{}{}
-
 
 \section{Engineer's Degree Thesis}
 \cvline{Title}{Web Application Firewall Cluster Configuration Management System for Heterogeneous Networks}
@@ -156,11 +158,40 @@ Institute}{Saint Petersburg}{100\%}{}
 \cvline{Abstract}{\url{https://www.hse.ru/en/edu/vkr/182863697}}
 \cvline{Defense}{\url{https://www.youtube.com/watch?v=-pzmGtnNtz4}}
 
+\section{Certifications}
+\cventry{2020}{RHCA in Infrastructure L2 (200-054-419)}{Red Hat}{Moscow}{}{}
+\cventry{2020}{RHCS in Camel Devel (200-054-419)}{Red Hat}{Moscow}{}{}
+\cventry{2020}{Red Hat Certified Engineer (200-054-419)}{Red Hat}{Moscow}{}{}
+\cventry{2020}{RHCSA (200-054-419)}{Red Hat}{Moscow}{}{}
+\cventry{2020}{Interskill - Mainframe Specialist - IBM Mainframe Environment - Fundamentals}{IBM}{}{}{}
+\cventry{2020}{Architectural Thinking}{IBM}{}{}{}
+\cventry{2020}{Beyond the Basics: Istio and IBM Cloud Kubernetes Service}{IBM}{}{}{}
+\cventry{2020}{Containers, K8s and Istio on IBM Cloud}{IBM}{}{}{}
+\cventry{2020}{IBM Recognized Speaker/ Presenter}{IBM}{}{}{}
+\cventry{2020}{IBM Recognized Teacher/ Educator}{IBM}{}{}{}
+\cventry{2020}{IBM Security Essentials for Architects}{IBM}{}{}{}
+\cventry{2020}{Getting started with Microservices with Istio and IBM Cloud Kubernetes Service}{IBM}{}{}{}
+\cventry{2020}{IBM Garage Method for Cloud Explorer}{IBM}{}{}{}
+\cventry{2020}{Docker Essentials: A Developer Introduction}{IBM}{}{}{}
+\cventry{2020}{GTS Architect Foundations}{IBM}{}{}{}
+\cventry{2020}{IBM Cloud Kubernetes Service}{IBM}{}{}{}
+\cventry{2020}{IBM Services Platform with Watson}{IBM}{}{}{}
 
-\section{Interests}
-\cvline{Programming}{Python, Erlang, Clojure}
-\cvline{Music}{Saxophone, Trumpet, Drums, Piano, Guitar}
-\cvline{Sports}{Longboarding, Snowboarding, Tennis}
-\cvline{Science}{Bioinformatics, Networks, Machine Learning}
+\cventry{2020}{LFC210: Fundamentals of Professional Open Source Management}{The Linux Foundation}{}{}{}
+\cventry{2020}{Security and Privacy by Design}{IBM}{}{}{}
+\cventry{2020}{Think Like a Hacker}{IBM}{}{}{}
+
+\cventry{2019}{Enterprise IT Transformation Advisor Level 4}{IBM}{}{}{}
+\cventry{2019}{Banking Industry Foundations}{IBM}{}{}{}
+\cventry{2019}{Telecommunications Industry Foundations}{IBM}{}{}{}
+\cventry{2019}{IBM Mentor}{IBM}{}{}{}
+\cventry{2019}{IBM Cloud Essentials}{IBM}{}{}{}
+\cventry{2019}{Enterprise Design Thinking Practitioner}{IBM}{}{}{}
+
+\cventry{2019}{Information Security}{Echelon}{Moscow}{}{}
+
+\cventry{2016}{Distributed Team Management}{Netology Group}{Moscow}{}{}
+\cventry{2014}{Molecular Biology and Genetics}{Bioinformatics
+Institute}{Saint Petersburg}{100\%}{}
 
 \end{document}
