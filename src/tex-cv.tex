@@ -3,17 +3,22 @@
 \moderncvstyle{fancy}
 \moderncvcolor{blue}
 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+\usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
 \usepackage[none]{hyphenat}
 \usepackage[scale=0.75]{geometry}
 
 \newcommand{\textsharp}{$\sharp$}
 \def\cpp{C/C{}\texttt{++}}
 
-\name{Sergey}{Sobko}
-\title{Lead Software Architect}
+\phone[mobile]{по запросу}
+\name{Собко}{Сергей Сергеевич}
+\title{Ведущий системный архитектор}
 
-\phone[mobile]{omitted for web}
+\extrainfo{* 24 ноября 1989}
 
 \social[linkedin]{bug2bug}
 \social[github]{profitware}
@@ -26,143 +31,138 @@
 \begin{document}
 \makecvtitle
 
-\section{Education}
-\cventry{2010--2016}{Engineer's degree, 230101 Computers, Computer Systems
-and Networks}{Moscow Institute of Electronics and Mathematics -- Higher School of Economics}{Moscow}{}{}
+\section{Образование}
+\cventry{2010--2016}{Специалист, 230101 Вычислительные машины, комплексы,
+системы и сети}{Московский Институт Электроники и Математики НИУ ВШЭ}{Москва}{}{}
 
 
-\section{Languages}
-\cvlistitem{English (Upper Intermediate)}
-\cvlistitem{Russian (Native)}
+\section{Языки}
+\cvlistitem{Английский (Upper Intermediate)}
+\cvlistitem{Русский (Родной)}
 
 
-\section{Technical Experience}
-\subsection{Proficient In}
-\cvline{languages}{Python, JavaScript, Clojure, Matlab, Pascal/Delphi}
-\cvline{technologies}{Django, Flask, Tornado, MySQL, SQLite, Emacs,
+\section{Техническая экспертиза}
+\subsection{Профессионально}
+\cvline{языки программирования}{Python, JavaScript, Clojure, Matlab, Delphi}
+\cvline{технологии}{Django, Flask, Tornado, MySQL, SQLite, Emacs,
 \LaTeX{}, Bash Scripting, Git, Subversion, PostgreSQL, MongoDB, jQuery,
-Bootstrap, Windows, Debian \& Red Hat Linux, OSX, JSON, Ant, XSLT,
-Regexr, HTML, CSS, Docker, Kubernetes, Helm, Apache Camel, OpenShift}
-\subsection{Have Experience With}
-\cvline{languages}{PHP, Java, C$^\sharp$, $\cpp$, Erlang, Groovy, Haskell,
-Scala} \cvline{technologies}{Apache Kafka, Nginx, Flash, GIMP, SQL Server, Oracle,
+Bootstrap, Windows, Debian \& Red Hat Linux, Mac OS X, JSON, Ant, XSLT,
+Regexr, HTML, CSS, Docker, Kubernetes, Helm, Apache Camel, Red Hat OpenShift}
+\subsection{Есть опыт}
+\cvline{языки программирования}{PHP, Java, C$^\sharp$, $\cpp$, Erlang, Groovy, Haskell,
+Scala} \cvline{технологии}{Apache Kafka, Nginx, Flash, GIMP, SQL Server, Oracle,
 Eclipse, .NET, Spring, Rancher, MicroK8s, OpenStack}
 
 
-\section{Current Position}
-\cventry{2019--\textit{present}}{Lead Open Source Software Architect}{IBM}{Moscow}{}{
-Open Source Software solutions implementation and support:
+\section{Текущая позиция}
+\cventry{2019--\textit{настоящее}}{Ведущий системный архитектор}{IBM}{Москва}{}{
+Проектирование и реализация решений на базе открытого ПО:
 \begin{itemize}
 \item Red Hat Certified Architect in Infrastructure Level II (\url{https://www.redhat.com/rhtapps/services/verify/?certId=200-054-419})
-\item Proof-of-concepts and pilots for Banks, Telecoms and Government Companies (e.g., OpenStack PoC implementation and acceptance testing in large Telco).
-\item Built interaction relationships with partners and vendors for support and consultancy on Nginx, PostgreSQL, Apache Kafka and other software products.
-\item Architectures and Solutioning for OpenShift, Apache Kafka, PostgreSQL, security, logging and monitoring in Banks, Government, Oil and Gas Companies.
+\item Построение взаимоотношений с вендорами открытого ПО для программных продуктов Nginx, PostgreSQL, Apache Kafka и др.
+\item Архитектура и проектирование решений на базе Red Hat OpenShift, Apache Kafka, PostgreSQL, решений по информационной безопасности, аудиту и мониторингу для компаний в сферах: банковской, государственной, телеком.
+\item Пилотирование, тестирование, аудит и внедрение решений в различных организациях России, СНГ, Центральной и Восточной Европы.
 \end{itemize}}
 
-\section{Work Experience}
-\cventry{2016--2019}{Development Team Leader / Software Architect}{Positive Technologies}{Moscow}{}{
-Web Application Firewall (\url{https://af.ptsecurity.com/}) solutions management and R\&D using Python (Flask, Twisted), Groovy and JavaScript.
+\section{Опыт работы}
+\cventry{2016--2019}{Руководитель группы}{Positive Technologies}{Москва}{}{
+Разработка систем управления Web Application Firewall (\url{https://af.ptsecurity.com/}) с использованием Python, Groovy и JavaScript.
 \begin{itemize}
-\item Designed the entire backend architecture for cloud-based (Kubernetes) PT AF.
-\item Managed AF user interface and network infrastructure team which gradually increased up to 10 members.
-\item Implemented ``Automatic Teamlead'' solution for automation of development team routines and published ``Flower'' integration library for Jira, TFS, Gitlab and GitHub into open source (\url{https://github.com/PositiveTechnologies/flower}) -- it got over 100 stars.
-\item Created domain-specific language and interpreter for network configuration.
-\item Created device package for PT AF integration with Cisco ACI.
-\item Presented Cisco ACI and PT AF integration with Cisco Systems representatives at Positive Hack Days VI.
-\item Implemented part of WAF transparent proxy mode (bridge l2 interception).
+\item Проектирование и принятие решений по бэкэнд-части облачного PT AF.
+\item Управление группой разработки PT AF с увеличением до 10 человек.
+\item Разработка решения ``Автоматический тимлид'' для автоматизации управления командой и интеграционной бибилиотеки ``Flower'' в виде ПО с открытым исходным кодом (\url{https://github.com/PositiveTechnologies/flower}) -- более 100 звезд.
+\item Разработка предметно-оринтированного языка (DSL) и интерпретатора для описания сетевой конфигурации и модели управления кластером.
+\item Создания пакета устройства PT AF для интеграции с сетевой фабрикой Cisco ACI, презентация с представителями Cisco Systems на PHDays VI.
+\item Реализация режима прозрачного проксирования для PT AF.
 \end{itemize}
 }
 
-\cventry{2015--2016}{Sr. Software Developer}{Positive Technologies}{Moscow}{}{
-Web Application Firewall (\url{https://af.ptsecurity.com/})
-solutions R\&D using Python (Flask, Twisted) and JavaScript.
+\cventry{2015--2016}{Старший программист}{Positive Technologies}{Москва}{}{
+Разработка решения класса Web Application Firewall (\url{https://af.ptsecurity.com/})
+с использованием Python (Flask, Twisted) и JavaScript.
 \begin{itemize}
-\item Implemented Active Directory integration for PTAF configuration UI.
-\item Created detailed report generation functionality (attacks, alerts, etc.).
-\item Took 3rd place in Digital Substation Takeover contest at Positive Hack Days V.
+\item Реализация функционала авторизации и интеграции с Active Directory.
+\item Реализация функциональности создания отчетов (атаки, предупреждения).
+\item Взятие 3 места на конкурсе ``Digital Substation Takeover'' конференции Positive Hack Days V.
 \end{itemize}}
 
-\cventry{2013--2015}{Software
-Engineer}{RosBusinessConsulting}{Moscow}{}{
-Quotes monitoring web solutions R\&D using Python (Django, Tornado),
-JavaScript, Postgres and Oracle.
+\cventry{2013--2015}{Инженер-программист}{РБК}{Москва}{}{
+Разработка решений по котировкам с использованием Python (Django, Tornado),
+JavaScript, Postgres и Oracle.
 \begin{itemize}
-\item Quote.rbc.ru (\url{http://quote.rbc.ru/}) development and maintenance:
+\item Quote.rbc.ru (\url{http://quote.rbc.ru/}) разработка и поддержка:
   \begin{itemize}
-    \item created Top News section (\url{http://quote.rbc.ru/topnews/});
-    \item created Services and Prices section -- e-shopping solution
-    (\url{http://quote.rbc.ru/price/}) from scratch;
-    \item created authorization, registration and Personal Cabinet parts
-    (\url{http://quote.rbc.ru/user/}) from scratch and integrated them with
-    Oracle database.
+    \item доработка секции главных новостей (\url{http://quote.rbc.ru/topnews/});
+    \item разработка секции сервисов и цен created - решение в формате интернет-магазина
+    (\url{http://quote.rbc.ru/price/});
+    \item реализация авторизации, регистрации и личного кабинета
+    (\url{http://quote.rbc.ru/user/}) и интеграция с базой данных Oracle.
   \end{itemize}
-\item Spot currency market (\url{http://cash.rbc.ru/}) bug fixing, development
-and maintenance, Oracle to Postgres migration.
-\item Created Quotes monitor for GazPromBank (\url{http://v2.gpbmon.rbc.ru/}).
+\item Рынок наличной валюты (\url{http://cash.rbc.ru/}) - доработка, поддержка,
+миграция с Oracle на Postgres.
+\item Мониторинг котировок для Газпромбанка (\url{http://v2.gpbmon.rbc.ru/}).
 \end{itemize}}
 
-\cventry{2011--2013}{Developer}{Bank's Soft Systems}{Moscow}{}{
-Online Banking (\url{http://www.bssys.com/}) solutions R\&D.
+\cventry{2011--2013}{Программист}{BSS}{Москва}{}{
+Разработка систем дистанционного банковского обслуживания (\url{http://www.bssys.com/}).
 \begin{itemize}
-\item Developed and fixed special versions of online banking solution Private
-Client for Nordea Bank, Uniastrum Bank, MTS Bank, TFB, etc. using Oracle, Delphi and jQuery.
-\item Implemented multiple HSA (handwritten signature analogue) functional in
-standard version of online banking solution Private Client.
-\item Created a build system using Ant, Jython, Java and Javascript.
+\item Разработка специальных версий систем ДБО Частный Клиент для банков Nordea, Uniastrum, MTS, TFB с использованием Oracle, Delphi и jQuery.
+\item Разработка функционала множественной подписи в ДБО ЧК.
+\item Построение системы сборки с использованием Ant, Jython, Java и Javascript.
 \end{itemize}}
 
-\cventry{2010--2011}{Web Developer}{DEKO Media}{Moscow}{}{
-Web sites and internal ERP solutions R\&D using Python and JavaScript.
+\cventry{2010--2011}{Веб-разработчик}{DEKO Media}{Москва}{}{
+Разработка веб-сайтов и внутренней ERP-системы с использованием Python, JavaScript и Oracle.
 \begin{itemize}
-\item Created dispatcher workplace and warehouse maintenance solution from scratch.
-\item Redesigned DEKO Media web site (\url{http://deko-media.ru/}).
+\item Разработка ПО для рабочего места ресепшена и для управления складом.
+\item Редизайн сайта DEKO Media (\url{http://deko-media.ru/}) и интеграция с системой управления складом.
 \end{itemize}
 }
 
-\section{Open Source Development}
-\cventry{2005--present}{Open Source Developer}{The Profitware Group}{}{}{
-Participated in the creation of free and open source software:
+\section{Разработка Open Source}
+\cventry{2005--\textit{настоящее}}{Разработчик Open Source}{The Profitware Group}{}{}{
+Участие в создании свободного и открытого программного обеспечения:
 \begin{itemize}
-\item For Moscow Institute of Electronics and Mathematics:
+\item Для Московского Института Электроники и Математики:
   \begin{itemize}
-    \item CircuitryLib -- Python library for modelling various circuit engineering systems;
-    \item SpiritLevel -- PoC for MicroPython device;
-    \item ErlangIO -- PoC for connecting Erlang VM with GNU/Linux kernel;
-    \item mDSS -- Decision Support System in Clojure;
-    \item Cheque -- Flask OCR RESTful service.
+    \item CircuitryLib -- библиотка на Python для моделирования различных цифровых систем;
+    \item SpiritLevel -- PoC для устройства на MicroPython;
+    \item ErlangIO -- PoC для проверки возможности соединения Erlang VM с ядром GNU/Linux;
+    \item mDSS -- Система принятия решений на Clojure;
+    \item Cheque -- RESTful сервис для распознавания чеков на Flask.
   \end{itemize}
-\item Productivity Desktop Environment for Fedora GNU/Linux.
-\item Leiningen plugins for OpenShift, Ring static extraction and version handling.
-\item ProfitPlatform-NG -- Python and Erlang distributed RPC using RabbitMQ.
-\item Lisp Flavoured Erlang (LFE): finite lazy sequences and cycle/1 implementation.
-\item SaltStack, Ferm, Gitlab Java API, HyLang, Rouge small improvements.
+\item Productivity Desktop Environment для Fedora GNU/Linux.
+\item Плагины на Leiningen для Red Hat OpenShift, для сбора статики из Ring и для управления версиями.
+\item ProfitPlatform-NG -- распределенная RPC-система для Python и Erlang с использованием RabbitMQ.
+\item Lisp Flavoured Erlang (LFE): реализация конечных ленивых последовательностей и имплементация cycle/1.
+\item Небольшие улучшения в проектах SaltStack, Ferm, Gitlab Java API, HyLang, Rouge.
 \end{itemize}
 }
 
 
-\section{Teaching and Coaching Experience}
-\cventry{2016--\textit{present}}{Lecturer in Computer Science}{Higher School of Economics}{Moscow}{}{
-Web Development Course (\url{https://www.hse.ru/en/edu/courses/219903520} -- for Master's program Computational Linguistics) which was acknowledged as ``Best Course for New Knowledge and Skills'' in 2018/19 and aims to teach students:
+\section{Учебный и тренерский опыт}
+\cventry{2016--\textit{настоящее}}{Приглашенный преподаватель}{Высшая Школа Экономики}{Москва}{}{
+Курс по веб-девелопменту для магистерских программ Компьютерная лингвистика (\url{https://www.hse.ru/edu/courses/339567102}) и Цифровые методы в гуманитарных науках (\url{https://www.hse.ru/edu/courses/339567106}):
 \begin{itemize}
-\item making up web pages using Bootstrap;
-\item creating web applications using Python (Flask, Celery);
-\item creating modern frontend web applications using AngularJS;
-\item packaging web applications into docker containers.
+\item верстка с использованием Bootstrap и других фреймворков;
+\item создание веб-приложений с использованием Python (Flask, Celery);
+\item разработка современных фронтэнд-приложений с помощью AngularJS;
+\item упаковка веб-приложений в контейнеры Docker.
 \end{itemize}}
 
-\cventry{2016--\textit{present}}{Coach}{Django Girls}{Moscow}{}{Coached participants of Django Girls Moscow 2016 (\url{http://tceh.com/djangogirls/}).}
+\cventry{2016--\textit{настоящее}}{Тренер}{Django Girls}{Москва}{}{Тренировка участниц Django Girls Москва 2016 (\url{http://tceh.com/djangogirls/}).}
 
-\section{Engineer's Degree Thesis}
-\cvline{Title}{Web Application Firewall Cluster Configuration Management System for Heterogeneous Networks}
-\cvline{Final Grade}{10 out of 10}
-\cvline{Abstract}{\url{https://www.hse.ru/en/edu/vkr/182863697}}
-\cvline{Defense}{\url{https://www.youtube.com/watch?v=-pzmGtnNtz4}}
+\section{Дипломная работа специалиста}
+\cvline{Наименование}{Система управления конфигурацией Web Application Firewall кластера с гетерогенной сетевой структурой}
+\cvline{Финальная оценка}{10 из 10}
+\cvline{Аннотация}{\url{https://www.hse.ru/ru/edu/vkr/182863697}}
+\cvline{Защита}{\url{https://www.youtube.com/watch?v=-pzmGtnNtz4}}
 
-\section{Certifications}
-\cventry{2020}{RHCA in Infrastructure L2 (200-054-419)}{Red Hat}{Moscow}{}{}
-\cventry{2020}{RHCS in Camel Devel (200-054-419)}{Red Hat}{Moscow}{}{}
-\cventry{2020}{Red Hat Certified Engineer (200-054-419)}{Red Hat}{Moscow}{}{}
-\cventry{2020}{RHCSA (200-054-419)}{Red Hat}{Moscow}{}{}
+\section{Сертификации}
+\cventry{2020}{RHCA in Infrastructure L2 (200-054-419)}{Red Hat}{Москва}{}{}
+\cventry{2020}{RHCS in Camel Devel (200-054-419)}{Red Hat}{Москва}{}{}
+\cventry{2020}{Red Hat Certified Engineer (200-054-419)}{Red Hat}{Москва}{}{}
+\cventry{2020}{RHCSA (200-054-419)}{Red Hat}{Москва}{}{}
 \cventry{2020}{Interskill - Mainframe Specialist - IBM Mainframe Environment - Fundamentals}{IBM}{}{}{}
 \cventry{2020}{Architectural Thinking}{IBM}{}{}{}
 \cventry{2020}{Beyond the Basics: Istio and IBM Cloud Kubernetes Service}{IBM}{}{}{}
@@ -188,10 +188,9 @@ Web Development Course (\url{https://www.hse.ru/en/edu/courses/219903520} -- for
 \cventry{2019}{IBM Cloud Essentials}{IBM}{}{}{}
 \cventry{2019}{Enterprise Design Thinking Practitioner}{IBM}{}{}{}
 
-\cventry{2019}{Information Security}{Echelon}{Moscow}{}{}
+\cventry{2019}{Информационная безопасность, повышение квалификации (772406077178)}{УЦ Эшелон}{Москва}{}{}
 
-\cventry{2016}{Distributed Team Management}{Netology Group}{Moscow}{}{}
-\cventry{2014}{Molecular Biology and Genetics}{Bioinformatics
-Institute}{Saint Petersburg}{100\%}{}
+\cventry{2016}{Управление распределенной командой}{Нетология}{Москва}{}{}
+\cventry{2014}{Молекулярная биология и генетика}{Институт Биоинформатики}{Санкт-Петербург}{100\%}{}
 
 \end{document}
